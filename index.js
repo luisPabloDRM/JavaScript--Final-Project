@@ -61,6 +61,7 @@ const addListeners=()=> {
  document.getElementById('btn').addEventListener('click', getCharacters);
  document.getElementById('btn-3').addEventListener('click', addEvent);
  document.getElementById('btn-2').addEventListener('click',randomCharacter);
+ document.getElementById('butSearch').addEventListener('click', rymFinder);
 }
 
 
@@ -74,7 +75,17 @@ var addEvent =()=>{
 }
 
 //SEARCH
+const rymFinder=()=>{
+  const textinput = document.getElementById('inputSearch').value
+  let itemsViewed = document.querySelectorAll('.presentation__principal')
+  itemsViewed.forEach(item=>item.classList.remove('hide'))
 
+  itemsViewed.forEach(item=>{
+    if(!item.title.toLowerCase().includes(textinput.toLowerCase())){
+      item.classList.add('hide')
+    }
+  })
+}
 
 
 

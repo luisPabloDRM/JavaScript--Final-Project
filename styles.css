@@ -1,0 +1,133 @@
+s * {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.init{
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.divHeader{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+
+
+.form{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 auto;
+  width: 400px;
+  background-color: plum;
+  padding: 6px;
+  border-radius: 10px;
+
+}
+
+.input{
+  padding: 5px;
+}
+
+.label{
+  display: block;
+  padding: 5px;
+}
+
+.btn_S{
+  margin: 20px 0;
+  border-radius: 15px 50px 30px;
+  padding: .6rem 1rem;
+  border: 1px solid #995309;
+
+  background-color: #d9750b;
+  color: #fff;
+
+  font-size: 1rem;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, .5);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset,
+    0 1px 3px rgba(0, 0, 0, .2);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #f90), to(#e76a00));
+  background-image: linear-gradient(#f90 10%, #e76a00 100%);
+}
+
+.main {
+  margin: 30px, auto;
+  max-width: 100%;
+  background: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .5)), url(./assets/teahub.io-se-wallpaper-3676210.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.presentacion__principal {
+  display:flex;
+
+  flex-direction: column;
+  align-items: center;
+  min-width: 33%;
+  background-color: #ffffff10;
+  backdrop-filter: blur(12px);
+
+
+}
+
+.presentacion__principal__div1 {
+  border-color: rebeccapurple;
+  border-width: 2px;
+  border-style: outset;
+}
+
+.presentacion__principal__div2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  
+  list-style-type: style square; 
+}
+
+.btn_1 {
+  margin: 20px 0;
+  border-radius: 15px 50px 30px;
+  padding: .6rem 1rem;
+  border: 1px solid #995309;
+
+  background-color: #d9750b;
+  color: #fff;
+
+  font-size: 1.5rem;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, .5);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset,
+    0 1px 3px rgba(0, 0, 0, .2);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #f90), to(#e76a00));
+  background-image: linear-gradient(#f90 10%, #e76a00 100%);
+}
+
+.btn-1:hover,
+.btn-1:focus {
+  background-color: #e0811b;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #f0a100), to(#f70));
+  background-image: linear-gradient(#f0a100 10%, #f70 100%);
+}
+
+.btn-1:active {
+  background-color: #cf6a00;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .2) inset;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #f0a100), to(#f70));
+  background-image: linear-gradient(#f0a100 10%, #f70 100%);
+}
+
+
+
+.hide{
+  display: none;
+}

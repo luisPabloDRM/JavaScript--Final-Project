@@ -67,32 +67,45 @@ align-items: center;
   background: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .5)), url(./assets/teahub.io-se-wallpaper-3676210.png);
   background-repeat: no-repeat;
   background-size: cover;
+ 
 }
 
 .presentacion__principal {
   display:flex;
-
   flex-direction: column;
   align-items: center;
   min-width: 33%;
+  
   background-color: #ffffff10;
   backdrop-filter: blur(12px);
+  
+
+ 
 
 
 }
 
 .presentacion__principal__div1 {
   border-color: rebeccapurple;
-  border-width: 2px;
-  border-style: outset;
+  border: 5px outset rgba(28,110,164,0.97);
+  border-radius: 40px 40px 40px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .presentacion__principal__div2 {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   
-  list-style-type: style square; 
+ 
+}
+.img_border{
+  
+  border: 5px groove #1C6EA4;
+;
+
 }
 
 .btn_1 {
@@ -126,7 +139,18 @@ align-items: center;
   background-image: linear-gradient(#f0a100 10%, #f70 100%);
 }
 
-
+.text{
+font-family: Impact, Charcoal, sans-serif;
+font-size: 25px;
+letter-spacing: 2px;
+word-spacing: 2px;
+color: #000000;
+font-weight: 700;
+text-decoration: none;
+font-style: italic;
+font-variant: small-caps;
+text-transform: none;
+}
 
 .hide{
   display: none;

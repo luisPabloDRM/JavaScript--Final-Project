@@ -19,31 +19,33 @@ const paintCharacters = (a) => {
     
 
     const Principal = document.createElement("li")
-    const li1_1 = document.createElement("li")
-    const li2_2 = document.createElement("li")
+    const div_1 = document.createElement("div")
+    const div_2 = document.createElement("div")
     Principal.classList.add("presentacion__principal")
-    li1_1.classList.add("presentacion_principal_div1")
-    li2_2.classList.add("presentacion_principal_div2")
+    div_1.classList.add("presentacion_principal_div1")
+    div_2.classList.add("presentacion_principal_div2")
     const img = document.createElement("img")
     img.src = element.image
-    const li1 = document.createElement("li");
-    const li2 = document.createElement("li");
-    const li = document.createElement("li")
-    const li4 = document.createElement('li');
+    const p1 = document.createElement("p");
+    const p2 = document.createElement("p");
+    const pi = document.createElement("p")
+    const p4 = document.createElement('p');
+    div_1.classList.add("img_border")
+    div_2.classList.add("text")
     Principal.title = element.name
-    li.innerText = element.name;
-    li1.innerText = element.status;
-    li2.innerText = element.species;
-    li4.innerText = element.id;
-
+    pi.innerText = element.name;
+    p1.innerText = element.status;
+    p2.innerText = element.species;
+    p4.innerText = element.id;
+  
     ul.appendChild(Principal)
-    Principal.appendChild(li1_1)
-    Principal.appendChild(li2_2)
-    li1_1.appendChild(img)
-    li1_1.appendChild(li)
-    li1_1.appendChild(li1)
-    li1_1.appendChild(li2)
-    li1_1.appendChild(li4)
+    Principal.appendChild(div_1)
+    Principal.appendChild(div_2)
+    div_1.appendChild(img)
+    div_2.appendChild(pi)
+    div_2.appendChild(p1)
+    div_2.appendChild(p2)
+    div_2.appendChild(p4)
   });
 }
 

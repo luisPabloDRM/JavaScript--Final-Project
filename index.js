@@ -18,34 +18,32 @@ const paintCharacters = (a) => {
   a.forEach(element => {
     
 
-    const divPrincipal = document.createElement("div")
-    const div1 = document.createElement("div")
-    const div2 = document.createElement("div")
-    divPrincipal.classList.add("presentacion__principal")
-    div1.classList.add("presentacion_principal_div1")
-    div2.classList.add("presentacion_principal_div2")
+    const Principal = document.createElement("li")
+    const li1_1 = document.createElement("li")
+    const li2_2 = document.createElement("li")
+    Principal.classList.add("presentacion__principal")
+    li1_1.classList.add("presentacion_principal_div1")
+    li2_2.classList.add("presentacion_principal_div2")
     const img = document.createElement("img")
     img.src = element.image
     const li1 = document.createElement("li");
     const li2 = document.createElement("li");
     const li = document.createElement("li")
     const li4 = document.createElement('li');
-    divPrincipal.title = element.name
+    Principal.title = element.name
     li.innerText = element.name;
-
     li1.innerText = element.status;
-
     li2.innerText = element.species;
     li4.innerText = element.id;
 
-    ul.appendChild(divPrincipal)
-    divPrincipal.appendChild(div1)
-    divPrincipal.appendChild(div2)
-    div1.appendChild(img)
-    div2.appendChild(li)
-    div2.appendChild(li1)
-    div2.appendChild(li2)
-    div2.appendChild(li4)
+    ul.appendChild(Principal)
+    Principal.appendChild(li1_1)
+    Principal.appendChild(li2_2)
+    li1_1.appendChild(img)
+    li1_1.appendChild(li)
+    li1_1.appendChild(li1)
+    li1_1.appendChild(li2)
+    li1_1.appendChild(li4)
   });
 }
 
@@ -64,7 +62,7 @@ const addListeners=()=> {
  document.getElementById('butSearch').addEventListener('click', rymFinder);
 }
 
-
+//Esconder pantalla
 
 var addEvent =()=>{
 
@@ -76,17 +74,18 @@ var addEvent =()=>{
 
 //SEARCH
 const rymFinder=()=>{
+ // debugger
   const textinput = document.getElementById('inputSearch').value
-  let itemsViewed = document.querySelectorAll('.presentation__principal')
-  itemsViewed.forEach(item=>item.classList.remove('hide'))
+  let ulNode =document.querySelectorAll(".presentacion__principal");
+ // ulNode.forEach(item =>{item.classList.remove('hide')})
 
-  itemsViewed.forEach(item=>{
+   ulNode.forEach(item=>{
     if(!item.title.toLowerCase().includes(textinput.toLowerCase())){
       item.classList.add('hide')
-    }
-  })
+   } 
+  
+})
 }
-
 
 
 // RANDOMIZE
@@ -101,7 +100,5 @@ const randomCharacter =  () => {
 
   personajes.forEach((item)=>{
     // debugger
-  if( item.title !== rym.title){item.classList.add('hide')} 
-  })
-
-}
+  if( item.title !== rym.title){item.classList.add('hide')}})}
+  
